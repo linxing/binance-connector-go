@@ -841,3 +841,7 @@ func (c *Client) NewSetAutoStakingService() *SetAutoStakingService {
 func (c *Client) NewPersonalLeftQuotaService() *PersonalLeftQuotaService {
 	return &PersonalLeftQuotaService{c: c}
 }
+
+func (c *Client) NewMiningPaymentListService() *MiningPaymentListService {
+	return &MiningPaymentListService{c: c}
+}
