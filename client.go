@@ -845,3 +845,11 @@ func (c *Client) NewPersonalLeftQuotaService() *PersonalLeftQuotaService {
 func (c *Client) NewMiningPaymentListService() *MiningPaymentListService {
 	return &MiningPaymentListService{c: c}
 }
+
+func (c *Client) NewMiningStatisticsUserStatusService() *MiningStatisticsUserStatusService {
+	return &MiningStatisticsUserStatusService{c: c}
+}
+
+func (c *Client) NewMiningWorkerListService() *MiningWorkerListService {
+	return &MiningWorkerListService{c: c}
+}
